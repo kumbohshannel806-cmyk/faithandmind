@@ -1,0 +1,17 @@
+{
+  "name": "faithandmind",
+  "version": "1.0.0",
+  "description": "Faith and Mind Cameroon USSD Mental Health Survey System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "africastalking": "^0.6.2",
+    "body-parser": "^1.20.1",
+    "axios": "^1.3.4",
+    "dotenv": "^16.0.3",
+    "express-rate-limit": "^7.1.5"
+  }
+}
