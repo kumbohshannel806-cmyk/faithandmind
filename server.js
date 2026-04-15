@@ -11,6 +11,7 @@ const { isValidIDCode, getSurveyStatus, markSurveyComplete, registerIDCode } = r
 const { saveSurveyToSheets } = require('./datasaver');
 
 const app = express();
+app.set('trust proxy', 1);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
