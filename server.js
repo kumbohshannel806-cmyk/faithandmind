@@ -255,7 +255,7 @@ app.post('/ussd', async (req, res) => {
     cleanSession(sessionId);
   }
 
-  console.log(`   Response: ${response.substring(0, 50)}...`);
+  console.log(`   Response: ${(response || '').substring(0, 50)}...`);
   res.set('Content-Type', 'text/plain');
   return res.send(response);
 });
